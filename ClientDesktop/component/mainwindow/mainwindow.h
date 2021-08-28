@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include "component/basic/basicwindow/basicwindow.h"
+#include "component/homepage/homepage.h"
 
 #include "service/calculateservice/calculateservice.h"
 
@@ -17,8 +18,12 @@ public:
 private:
     Ui::MainWindow *ui;
     CalculateService * serviceCalculate = nullptr;
+
+    BasicPage * ui_mainPage = nullptr;
 private:
     void initService() override;
     void connectSignal() override;
+
+    void initHomePage();
 };
 #endif // MAINWINDOW_H

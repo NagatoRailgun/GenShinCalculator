@@ -7,6 +7,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     initService();
     connectSignal();
+    initHomePage();
 }
 
 MainWindow::~MainWindow(){
@@ -19,4 +20,10 @@ void MainWindow::initService(){
 
 void MainWindow::connectSignal(){
 
+}
+
+void MainWindow::initHomePage(){
+    initPage(&ui_mainPage,ui->centralwidget,[](){},[=](){
+        ui_mainPage = new HomePage(ui->centralwidget);
+    },[](){});
 }

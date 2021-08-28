@@ -18,6 +18,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     component/basic/basicpage/basicpage.cpp \
     component/basic/basicwindow/basicwindow.cpp \
+    component/characterpage/characterpage.cpp \
     component/homepage/homepage.cpp \
     main.cpp \
     component/mainwindow/mainwindow.cpp \
@@ -27,12 +28,14 @@ SOURCES += \
 HEADERS += \
     component/basic/basicpage/basicpage.h \
     component/basic/basicwindow/basicwindow.h \
+    component/characterpage/characterpage.h \
     component/homepage/homepage.h \
     component/mainwindow/mainwindow.h \
     service/basicservice/basicservice.h \
     service/calculateservice/calculateservice.h
 
 FORMS += \
+    component/characterpage/characterpage.ui \
     component/homepage/homepage.ui \
     component/mainwindow/mainwindow.ui
 

@@ -19,6 +19,8 @@ SOURCES += \
     component/basic/basicpage/basicpage.cpp \
     component/basic/basicwindow/basicwindow.cpp \
     component/characterpage/characterpage.cpp \
+    component/characterpage/elementalskillpage/elementalskillpage.cpp \
+    component/characterpage/normalattackpage/normalattackpage.cpp \
     component/homepage/homepage.cpp \
     main.cpp \
     component/mainwindow/mainwindow.cpp \
@@ -29,6 +31,8 @@ HEADERS += \
     component/basic/basicpage/basicpage.h \
     component/basic/basicwindow/basicwindow.h \
     component/characterpage/characterpage.h \
+    component/characterpage/elementalskillpage/elementalskillpage.h \
+    component/characterpage/normalattackpage/normalattackpage.h \
     component/homepage/homepage.h \
     component/mainwindow/mainwindow.h \
     service/basicservice/basicservice.h \
@@ -36,6 +40,8 @@ HEADERS += \
 
 FORMS += \
     component/characterpage/characterpage.ui \
+    component/characterpage/elementalskillpage/elementalskillpage.ui \
+    component/characterpage/normalattackpage/normalattackpage.ui \
     component/homepage/homepage.ui \
     component/mainwindow/mainwindow.ui
 

@@ -12,6 +12,8 @@ class CalculateService : public BasicService{
 public:
     ~CalculateService();
     static CalculateService * getInstance(QObject * parent = nullptr);
+
+    void addCharacter();//添加角色方法
 private:
     static CalculateService * instance;
 

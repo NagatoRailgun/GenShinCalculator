@@ -21,3 +21,11 @@ CalculateService * CalculateService::getInstance(QObject * parent){
     return instance;
 }
 
+void CalculateService::addCharacter(){
+    GENSHINCalculatorContext context;
+    context.callback.sender = this;
+    context.callback.after = [](void * sender,char * data,int len){
+
+    };
+    core->addCharacter(context);
+}

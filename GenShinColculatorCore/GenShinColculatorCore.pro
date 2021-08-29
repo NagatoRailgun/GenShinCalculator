@@ -17,12 +17,16 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    genshincolculatorcore.cpp
+    genshincolculatorcore.cpp \
+    basicservice/basicservice.cpp \
+    characterservice/characterservice.cpp
 
 HEADERS += \
     GenShinColculatorCore_global.h \
     calculateAPIFormat.h \
-    genshincolculatorcore.h
+    genshincolculatorcore.h \
+    basicservice/basicservice.h \
+    characterservice/characterservice.h
 
 # Default rules for deployment.
 unix {
